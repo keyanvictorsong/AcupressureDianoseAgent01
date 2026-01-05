@@ -1,0 +1,264 @@
+{
+  "disclaimer": "For educational reference only. Not medical advice or a substitute for professional care.",
+  "source_note": "Symptom-to-acupressure mappings compiled from public articles (Healthline) plus common TCM indications.",
+  "symptoms": [
+    {
+      "symptom": "nausea / vomiting / motion sickness",
+      "sources": [
+        "https://www.healthline.com/health/pressure-points-for-nausea"
+      ],
+      "points": [
+        {
+          "name": "Neiguan",
+          "code": "PC6",
+          "meridian": "Pericardium",
+          "location_hint": "Inner forearm, ~3 finger-breadths above wrist crease, between tendons",
+          "notes": "Common anti-nausea/acupressure point; often used with wrist bands."
+        },
+        {
+          "name": "Zusanli",
+          "code": "ST36",
+          "meridian": "Stomach",
+          "location_hint": "Below knee, one finger breadth lateral to tibia crest",
+          "notes": "Digestive support and qi boosting."
+        },
+        {
+          "name": "Gongsun",
+          "code": "SP4",
+          "meridian": "Spleen",
+          "location_hint": "Medial foot, distal to base of 1st metatarsal",
+          "notes": "Often paired with PC6 for stomach/epigastric issues."
+        },
+        {
+          "name": "Hegu",
+          "code": "LI4",
+          "meridian": "Large Intestine",
+          "location_hint": "Hand web between thumb and index finger",
+          "notes": "General pain/regulation point; avoid in pregnancy."
+        },
+        {
+          "name": "Taichong",
+          "code": "LV3",
+          "meridian": "Liver",
+          "location_hint": "Dorsum of foot between 1st and 2nd metatarsals",
+          "notes": "Moves Liver qi; used for nausea with stress component."
+        }
+      ]
+    },
+    {
+      "symptom": "anxiety / stress / agitation",
+      "sources": [
+        "https://www.healthline.com/health/pressure-points-for-anxiety"
+      ],
+      "points": [
+        {
+          "name": "Hall of Impression (Yintang)",
+          "code": "EX-HN3",
+          "meridian": "Extra point",
+          "location_hint": "Between eyebrows at glabella",
+          "notes": "Calms mind; also used for sinus pressure/headache."
+        },
+        {
+          "name": "Heavenly Gate (Ear Shenmen)",
+          "code": "Auricular Shenmen",
+          "meridian": "Auricular",
+          "location_hint": "Triangular fossa of the ear",
+          "notes": "Soothing point in auricular therapy."
+        },
+        {
+          "name": "Shoulder Well",
+          "code": "GB21",
+          "meridian": "Gallbladder",
+          "location_hint": "Highest point of shoulder muscle midpoint",
+          "notes": "Releases shoulder/neck tension; avoid in pregnancy."
+        },
+        {
+          "name": "Union Valley",
+          "code": "LI4",
+          "meridian": "Large Intestine",
+          "location_hint": "Hand web between thumb and index finger",
+          "notes": "General pain/stress modulator; avoid in pregnancy."
+        },
+        {
+          "name": "Great Surge",
+          "code": "LV3",
+          "meridian": "Liver",
+          "location_hint": "Dorsum of foot between 1st and 2nd metatarsals",
+          "notes": "Liver qi regulating; used for mood and tension."
+        }
+      ]
+    },
+    {
+      "symptom": "insomnia / poor sleep",
+      "sources": [
+        "https://www.healthline.com/health/pressure-points-for-sleep"
+      ],
+      "points": [
+        {
+          "name": "Spirit Gate",
+          "code": "HT7",
+          "meridian": "Heart",
+          "location_hint": "Ulnar side of wrist crease in small depression",
+          "notes": "Calms shen; classic for sleep and anxiety."
+        },
+        {
+          "name": "Three Yin Intersection",
+          "code": "SP6",
+          "meridian": "Spleen",
+          "location_hint": "Medial lower leg, ~3 cun above medial malleolus",
+          "notes": "Crossing point of SP/KI/LV; nourishes yin; avoid in pregnancy."
+        },
+        {
+          "name": "Bubbling Spring",
+          "code": "KI1",
+          "meridian": "Kidney",
+          "location_hint": "Sole, depression just below ball of foot",
+          "notes": "Grounding point; used to descend excess yang."
+        },
+        {
+          "name": "Inner Frontier Gate",
+          "code": "PC6",
+          "meridian": "Pericardium",
+          "location_hint": "Inner forearm, ~3 finger-breadths above wrist crease",
+          "notes": "Settles chest; useful for palpitations/anxiety-related insomnia."
+        },
+        {
+          "name": "Wind Pool",
+          "code": "GB20",
+          "meridian": "Gallbladder",
+          "location_hint": "Base of skull, in hollows lateral to tendons",
+          "notes": "Releases wind; sometimes used to relax neck and aid sleep."
+        }
+      ]
+    },
+    {
+      "symptom": "headache / migraine",
+      "sources": [
+        "https://www.healthline.com/health/pressure-points-for-headaches"
+      ],
+      "points": [
+        {
+          "name": "Union Valley",
+          "code": "LI4",
+          "meridian": "Large Intestine",
+          "location_hint": "Hand web between thumb and index finger",
+          "notes": "Common for frontal/temporal headaches; avoid in pregnancy."
+        },
+        {
+          "name": "Gates of Consciousness",
+          "code": "GB20",
+          "meridian": "Gallbladder",
+          "location_hint": "Base of skull, hollows beside large tendons",
+          "notes": "Occipital/neck tension headaches."
+        },
+        {
+          "name": "Third Eye (Yintang)",
+          "code": "EX-HN3",
+          "meridian": "Extra point",
+          "location_hint": "Between eyebrows",
+          "notes": "Sinus/frontal headaches and calming."
+        },
+        {
+          "name": "Temple (Taiyang)",
+          "code": "EX-HN5",
+          "meridian": "Extra point",
+          "location_hint": "Temple depression lateral to eyebrow",
+          "notes": "Temporal headaches."
+        },
+        {
+          "name": "Drilling Bamboo",
+          "code": "BL2",
+          "meridian": "Bladder",
+          "location_hint": "Inner end of eyebrows",
+          "notes": "Frontal/sinus headaches."
+        }
+      ]
+    },
+    {
+      "symptom": "neck / shoulder tension",
+      "sources": [
+        "https://www.healthline.com/health/pressure-points-for-anxiety"
+      ],
+      "points": [
+        {
+          "name": "Shoulder Well",
+          "code": "GB21",
+          "meridian": "Gallbladder",
+          "location_hint": "Highest point of shoulder muscle midpoint",
+          "notes": "Releases upper trapezius tension; avoid in pregnancy."
+        },
+        {
+          "name": "Gates of Consciousness",
+          "code": "GB20",
+          "meridian": "Gallbladder",
+          "location_hint": "Base of skull, hollows beside tendons",
+          "notes": "Neck stiffness and occipital pain."
+        },
+        {
+          "name": "Small Intestine 3",
+          "code": "SI3",
+          "meridian": "Small Intestine",
+          "location_hint": "Ulnar side of hand, proximal to little finger MCP joint",
+          "notes": "Neck/upper back channel opener (paired with BL62)."
+        },
+        {
+          "name": "Waiguan",
+          "code": "SJ5",
+          "meridian": "San Jiao",
+          "location_hint": "Dorsal forearm, ~2 cun above wrist crease between radius/ulna",
+          "notes": "Releases exterior, relieves lateral neck pain."
+        },
+        {
+          "name": "Union Valley",
+          "code": "LI4",
+          "meridian": "Large Intestine",
+          "location_hint": "Hand web between thumb and index finger",
+          "notes": "Adjunct for neck/shoulder tension; avoid in pregnancy."
+        }
+      ]
+    },
+    {
+      "symptom": "low back pain / sciatica",
+      "sources": [
+        "https://www.healthline.com/health/pressure-points-for-back-pain"
+      ],
+      "points": [
+        {
+          "name": "Kidney Shu",
+          "code": "BL23",
+          "meridian": "Bladder",
+          "location_hint": "1.5 cun lateral to L2 spinous process",
+          "notes": "Tonifies Kidneys; chronic low back soreness."
+        },
+        {
+          "name": "Weizhong",
+          "code": "BL40",
+          "meridian": "Bladder",
+          "location_hint": "Midpoint of popliteal crease",
+          "notes": "Key distal point for back pain/sciatica."
+        },
+        {
+          "name": "Huantiao",
+          "code": "GB30",
+          "meridian": "Gallbladder",
+          "location_hint": "Posterolateral hip, junction of outer third and inner two-thirds between greater trochanter and sacrum",
+          "notes": "Hip/sciatic distribution pain."
+        },
+        {
+          "name": "Kunlun",
+          "code": "BL60",
+          "meridian": "Bladder",
+          "location_hint": "Behind lateral malleolus in depression",
+          "notes": "Relaxes channel; used for back and neck pain."
+        },
+        {
+          "name": "Taixi",
+          "code": "KI3",
+          "meridian": "Kidney",
+          "location_hint": "Between medial malleolus and Achilles tendon",
+          "notes": "Supports Kidney yin/yang; chronic low back pain."
+        }
+      ]
+    }
+  ]
+}

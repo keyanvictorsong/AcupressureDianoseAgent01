@@ -1,0 +1,42 @@
+<!--pages/detail/detail.wxml-->
+<view class="detail-container">
+  <view class="header">
+    <text class="code">{{acupoint.code}}</text>
+    <text class="name">{{acupoint.chinese_name}}</text>
+    <text class="english">{{acupoint.english_name}}</text>
+  </view>
+
+  <view class="section" wx:if="{{acupoint.meridian}}">
+    <text class="section-title">经络</text>
+    <text class="section-content">{{acupoint.meridian}}</text>
+  </view>
+
+  <view class="section" wx:if="{{acupoint.location}}">
+    <text class="section-title">位置</text>
+    <text class="section-content">{{acupoint.location}}</text>
+  </view>
+
+  <view class="section">
+    <text class="section-title">穴位图片</text>
+    <view class="image-grid">
+      <image
+        wx:for="{{images}}"
+        wx:key="*this"
+        src="{{item}}"
+        mode="aspectFill"
+        bindtap="onImageTap"
+        data-src="{{item}}"
+      />
+    </view>
+  </view>
+
+  <view class="section" wx:if="{{acupoint.technique}}">
+    <text class="section-title">按摩方法</text>
+    <text class="section-content">{{acupoint.technique}}</text>
+  </view>
+
+  <view class="section" wx:if="{{acupoint.indications}}">
+    <text class="section-title">适应症</text>
+    <text class="section-content">{{acupoint.indications}}</text>
+  </view>
+</view>

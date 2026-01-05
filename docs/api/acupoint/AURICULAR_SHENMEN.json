@@ -1,0 +1,28 @@
+{
+  "success": true,
+  "acupoint": {
+    "code": "Auricular Shenmen",
+    "chinese_name": "耳神门",
+    "english_name": "Ear Shenmen",
+    "pinyin": "ershenmen",
+    "meridian": "Auricular",
+    "meridian_chinese": "耳穴",
+    "standard_location": "在耳轮脚分叉处稍上方的三角窝内",
+    "standard_location_en": "In the triangular fossa of the ear, at the apex of the triangular fossa, slightly above where the helix crus bifurcates",
+    "simple_method": "耳朵上方三角形凹陷区域的顶端",
+    "simple_method_en": "In the upper triangular hollow of the ear, at its apex.",
+    "anatomical": "耳廓软骨，耳大神经分布区",
+    "indications": [
+      "失眠 (insomnia)",
+      "多梦 (excessive dreaming)",
+      "焦虑 (anxiety)",
+      "高血压 (hypertension)",
+      "戒断症状 (withdrawal symptoms)"
+    ],
+    "functions": [
+      "镇静安神 (sedate and calm spirit)",
+      "止痛 (relieve pain)",
+      "抗过敏 (anti-allergic)"
+    ]
+  }
+}

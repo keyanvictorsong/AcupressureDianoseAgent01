@@ -1,0 +1,42 @@
+{
+  "success": true,
+  "symptom": "low back pain / sciatica",
+  "acupoints": [
+    {
+      "code": "BL23",
+      "name": "Kidney Shu",
+      "chinese_name": "肾俞",
+      "location_hint": "1.5 cun lateral to L2 spinous process",
+      "notes": "Tonifies Kidneys; chronic low back soreness."
+    },
+    {
+      "code": "BL40",
+      "name": "Weizhong",
+      "chinese_name": "委中",
+      "location_hint": "Midpoint of popliteal crease",
+      "notes": "Key distal point for back pain/sciatica."
+    },
+    {
+      "code": "GB30",
+      "name": "Huantiao",
+      "chinese_name": "环跳",
+      "location_hint": "Posterolateral hip, junction of outer third and inner two-thirds between greater trochanter and sacrum",
+      "notes": "Hip/sciatic distribution pain."
+    },
+    {
+      "code": "BL60",
+      "name": "Kunlun",
+      "chinese_name": "昆仑",
+      "location_hint": "Behind lateral malleolus in depression",
+      "notes": "Relaxes channel; used for back and neck pain."
+    },
+    {
+      "code": "KI3",
+      "name": "Taixi",
+      "chinese_name": "太溪",
+      "location_hint": "Between medial malleolus and Achilles tendon",
+      "notes": "Supports Kidney yin/yang; chronic low back pain."
+    }
+  ],
+  "disclaimer": "For educational reference only. Not medical advice or a substitute for professional care."
+}

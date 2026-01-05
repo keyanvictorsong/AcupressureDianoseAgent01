@@ -1,0 +1,42 @@
+{
+  "success": true,
+  "symptom": "headache / migraine",
+  "acupoints": [
+    {
+      "code": "LI4",
+      "name": "Union Valley",
+      "chinese_name": "合谷",
+      "location_hint": "Hand web between thumb and index finger",
+      "notes": "Common for frontal/temporal headaches; avoid in pregnancy."
+    },
+    {
+      "code": "GB20",
+      "name": "Gates of Consciousness",
+      "chinese_name": "风池",
+      "location_hint": "Base of skull, hollows beside large tendons",
+      "notes": "Occipital/neck tension headaches."
+    },
+    {
+      "code": "EX-HN3",
+      "name": "Third Eye (Yintang)",
+      "chinese_name": "印堂",
+      "location_hint": "Between eyebrows",
+      "notes": "Sinus/frontal headaches and calming."
+    },
+    {
+      "code": "EX-HN5",
+      "name": "Temple (Taiyang)",
+      "chinese_name": "太阳",
+      "location_hint": "Temple depression lateral to eyebrow",
+      "notes": "Temporal headaches."
+    },
+    {
+      "code": "BL2",
+      "name": "Drilling Bamboo",
+      "chinese_name": "攒竹",
+      "location_hint": "Inner end of eyebrows",
+      "notes": "Frontal/sinus headaches."
+    }
+  ],
+  "disclaimer": "For educational reference only. Not medical advice or a substitute for professional care."
+}

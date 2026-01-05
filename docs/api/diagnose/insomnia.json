@@ -1,0 +1,42 @@
+{
+  "success": true,
+  "symptom": "insomnia / poor sleep",
+  "acupoints": [
+    {
+      "code": "HT7",
+      "name": "Spirit Gate",
+      "chinese_name": "神门",
+      "location_hint": "Ulnar side of wrist crease in small depression",
+      "notes": "Calms shen; classic for sleep and anxiety."
+    },
+    {
+      "code": "SP6",
+      "name": "Three Yin Intersection",
+      "chinese_name": "三阴交",
+      "location_hint": "Medial lower leg, ~3 cun above medial malleolus",
+      "notes": "Crossing point of SP/KI/LV; nourishes yin; avoid in pregnancy."
+    },
+    {
+      "code": "KI1",
+      "name": "Bubbling Spring",
+      "chinese_name": "涌泉",
+      "location_hint": "Sole, depression just below ball of foot",
+      "notes": "Grounding point; used to descend excess yang."
+    },
+    {
+      "code": "PC6",
+      "name": "Inner Frontier Gate",
+      "chinese_name": "内关",
+      "location_hint": "Inner forearm, ~3 finger-breadths above wrist crease",
+      "notes": "Settles chest; useful for palpitations/anxiety-related insomnia."
+    },
+    {
+      "code": "GB20",
+      "name": "Wind Pool",
+      "chinese_name": "风池",
+      "location_hint": "Base of skull, in hollows lateral to tendons",
+      "notes": "Releases wind; sometimes used to relax neck and aid sleep."
+    }
+  ],
+  "disclaimer": "For educational reference only. Not medical advice or a substitute for professional care."
+}

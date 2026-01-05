@@ -1,0 +1,147 @@
+openapi: 3.0.1
+info:
+  title: 穴位诊断助手 API
+  description: 根据症状推荐穴位按摩方案，提供穴位位置图片
+  version: 1.0.0
+servers:
+  - url: https://your-domain.com
+paths:
+  /chat:
+    post:
+      operationId: diagnoseSymptom
+      summary: 根据症状描述获取穴位推荐
+      description: 用户描述症状后，返回推荐的穴位、位置说明和图片链接
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              required:
+                - message
+              properties:
+                message:
+                  type: string
+                  description: 用户的症状描述，如"我头痛"、"失眠"、"腰疼"等
+      responses:
+        "200":
+          description: 成功返回穴位推荐
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  success:
+                    type: boolean
+                  mode:
+                    type: string
+                    description: "keyword" 或 "llm"
+                  diagnosis:
+                    type: object
+                    properties:
+                      symptom:
+                        type: string
+                      acupoints:
+                        type: array
+                        items:
+                          type: object
+                          properties:
+                            code:
+                              type: string
+                              description: 穴位代码如 LI4, GB20
+                            chinese_name:
+                              type: string
+                            name:
+                              type: string
+                              description: 英文名
+                  llm_response:
+                    type: string
+                    description: LLM分析结果（复杂症状时）
+                  recommended_acupoints:
+                    type: array
+                    items:
+                      type: object
+                      properties:
+                        code:
+                          type: string
+                        chinese_name:
+                          type: string
+                        name:
+                          type: string
+
+  /images/{code}:
+    get:
+      operationId: getAcupointImages
+      summary: 获取穴位图片列表
+      description: 返回指定穴位的所有位置示意图
+      parameters:
+        - name: code
+          in: path
+          required: true
+          schema:
+            type: string
+          description: 穴位代码，如 LI4, GB20, SP6
+      responses:
+        "200":
+          description: 图片列表
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  code:
+                    type: string
+                  images:
+                    type: array
+                    items:
+                      type: string
+                      description: 图片URL路径
+                  count:
+                    type: integer
+
+  /symptoms:
+    get:
+      operationId: listSymptoms
+      summary: 获取所有支持的症状列表
+      responses:
+        "200":
+          description: 症状列表
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  count:
+                    type: integer
+                  symptoms:
+                    type: array
+                    items:
+                      type: string
+
+  /acupoints:
+    get:
+      operationId: listAcupoints
+      summary: 获取所有穴位列表
+      responses:
+        "200":
+          description: 穴位列表
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  count:
+                    type: integer
+                  acupoints:
+                    type: array
+                    items:
+                      type: object
+                      properties:
+                        code:
+                          type: string
+                        chinese_name:
+                          type: string
+                        english_name:
+                          type: string
+                        meridian:
+                          type: string

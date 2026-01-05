@@ -1,0 +1,337 @@
+{
+  "metadata": {
+    "source": "DignoseSource/GPTJIngLuoStudy.md",
+    "notes": "Structured from provided TCM meridian pathway descriptions."
+  },
+  "meridians": [
+    {
+      "name": "Lung",
+      "code": "LU",
+      "chinese_name": "手太阴肺经",
+      "start": "Internal middle jiao; connects to Large Intestine and emerges on the chest near LU-1 under the clavicle",
+      "end": "Radial tip of the thumb (LU-11)",
+      "course": [
+        "Originates internally in the middle jiao and connects to the Large Intestine",
+        "Ascends to the lungs and throat",
+        "Emerges near LU-1 on the chest and travels down the antero-lateral shoulder and arm along the radial side",
+        "Passes the wrist (radial artery area) and the thenar eminence"
+      ],
+      "branches": [
+        "Branch at LU-7 connects to the Large Intestine meridian on the index finger"
+      ],
+      "connections": [
+        "Large Intestine organ",
+        "Large Intestine meridian"
+      ],
+      "notable_points": [
+        "LU-1 Zhongfu",
+        "LU-5 Chize",
+        "LU-7 Lieque",
+        "LU-11 Shaoshang"
+      ]
+    },
+    {
+      "name": "Large Intestine",
+      "code": "LI",
+      "chinese_name": "手阳明大肠经",
+      "start": "Radial side of the index finger (LI-1)",
+      "end": "Side of the nose (LI-20), meeting the Stomach meridian",
+      "course": [
+        "Runs up the lateral aspect of the arm past the elbow and shoulder to LI-15",
+        "Crosses over the shoulder to the supraclavicular area",
+        "Internal branch connects to the lung and descends to the Large Intestine organ",
+        "External path ascends the neck and cheek, circles around the lower lip, and ends at LI-20"
+      ],
+      "branches": [
+        "Internal branch links lung to Large Intestine organ"
+      ],
+      "connections": [
+        "Lung organ",
+        "Large Intestine organ",
+        "Stomach meridian at LI-20"
+      ],
+      "notable_points": [
+        "LI-4 Hegu",
+        "LI-20 Yingxiang"
+      ]
+    },
+    {
+      "name": "Stomach",
+      "code": "ST",
+      "chinese_name": "足阳明胃经",
+      "start": "Beside the nose at the ala nasi near LI-20",
+      "end": "Lateral side of the second toe (ST-45)",
+      "course": [
+        "Ascends to the bridge of the nose and inner corner of the eye",
+        "Descends lateral to the nose and around the mouth to the chin",
+        "Runs down the front of the neck and chest",
+        "Continues through the abdomen about 2 cun lateral to the midline and passes the inguinal region",
+        "Travels along the front of the thigh and down the antero-lateral lower leg over the dorsum of the foot"
+      ],
+      "branches": [],
+      "connections": [
+        "Originates near the Large Intestine meridian at LI-20"
+      ],
+      "notable_points": [
+        "ST-36 Zusanli",
+        "ST-44 Neiting"
+      ]
+    },
+    {
+      "name": "Spleen",
+      "code": "SP",
+      "chinese_name": "足太阴脾经",
+      "start": "Medial side of the big toe (SP-1)",
+      "end": "Lateral chest around the 2nd intercostal space on the mid-axillary line (SP-21)",
+      "course": [
+        "Runs along the medial edge of the foot and ascends in front of the medial malleolus",
+        "Continues up the inner lower leg and inner thigh",
+        "Enters the groin and lower abdomen then runs upward 4 cun lateral to the abdominal midline toward the chest",
+        "Spreads to the lower chest and reaches the area near SP-21"
+      ],
+      "branches": [
+        "Internal connections to the Spleen and Stomach organs with a branch linking to the Heart"
+      ],
+      "connections": [
+        "Spleen organ",
+        "Stomach organ",
+        "Heart (via branch)"
+      ],
+      "notable_points": [
+        "SP-9 Yinlingquan",
+        "SP-6 Sanyinjiao"
+      ]
+    },
+    {
+      "name": "Heart",
+      "code": "HT",
+      "chinese_name": "手少阴心经",
+      "start": "Heart organ, descending internally to connect with the Small Intestine",
+      "end": "Radial corner of the little fingernail (HT-9)",
+      "course": [
+        "Emerges from the axilla at HT-1",
+        "Travels down the posterior-medial arm along the inner biceps and ulnar forearm",
+        "Passes the wrist at HT-7 and runs to the palm’s ulnar side"
+      ],
+      "branches": [
+        "Branch from the Heart links to the Small Intestine meridian at the little finger"
+      ],
+      "connections": [
+        "Small Intestine meridian"
+      ],
+      "notable_points": [
+        "HT-7 Shenmen",
+        "HT-9 Shaochong"
+      ]
+    },
+    {
+      "name": "Small Intestine",
+      "code": "SI",
+      "chinese_name": "手太阳小肠经",
+      "start": "Ulnar side of the little finger (SI-1)",
+      "end": "Front of the ear at SI-19",
+      "course": [
+        "Runs up the posterior side of the hand and arm",
+        "Travels along the lateral-posterior shoulder to the scapula region near SI-11",
+        "Zigzags upward to the upper back (near SI-14 and SI-15) and the supraclavicular fossa",
+        "Branch ascends the neck and cheek to the outer canthus, then enters the ear to SI-19"
+      ],
+      "branches": [
+        "Internal pathway connects to the Heart and Stomach organs",
+        "Branch to the ear links with the Gall Bladder channel around GB-1"
+      ],
+      "connections": [
+        "Heart organ",
+        "Stomach organ",
+        "Gall Bladder channel near GB-1"
+      ],
+      "notable_points": [
+        "SI-19 Tinggong",
+        "SI-3 Houxi"
+      ]
+    },
+    {
+      "name": "Bladder",
+      "code": "BL",
+      "chinese_name": "足太阳膀胱经",
+      "start": "Inner corner of the eye (BL-1)",
+      "end": "Lateral side of the small toe (BL-67)",
+      "course": [
+        "Ascends over the forehead and crown",
+        "From the vertex enters the brain briefly then bifurcates into two parallel branches down the back of the head and neck",
+        "Runs down the back with one branch near the spine and another about 1.5 cun lateral, continuing through the lumbar region and buttocks",
+        "Branches reunite in the gluteal region and proceed down the posterior thigh and calf",
+        "Passes behind the lateral malleolus to the small toe"
+      ],
+      "branches": [],
+      "connections": [
+        "Kidney channel at BL-67"
+      ],
+      "notable_points": [
+        "BL-1 Jingming",
+        "BL-60 Kunlun"
+      ]
+    },
+    {
+      "name": "Kidney",
+      "code": "KI",
+      "chinese_name": "足少阴肾经",
+      "start": "Sole under the little toe (KI-1, Yongquan)",
+      "end": "Just below the clavicle (KI-27)",
+      "course": [
+        "Crosses the foot arch and emerges behind the inner ankle near KI-3",
+        "Ascends the medial leg through the calf and inner knee then up the inner thigh",
+        "Enters the spine near the kidney area and connects internally with the Kidneys and Bladder",
+        "Ascends through the abdomen 0.5 cun lateral to the Ren channel and passes through the chest to KI-27"
+      ],
+      "branches": [
+        "Internal branch rises to the throat and root of the tongue"
+      ],
+      "connections": [
+        "Kidneys",
+        "Bladder channel"
+      ],
+      "notable_points": [
+        "KI-3 Taixi",
+        "KI-1 Yongquan"
+      ]
+    },
+    {
+      "name": "Pericardium",
+      "code": "PC",
+      "chinese_name": "手厥阴心包经",
+      "start": "Chest/pericardial region",
+      "end": "Tip of the middle finger (PC-9)",
+      "course": [
+        "Originates in the chest and descends through the diaphragm connecting with the upper, middle, and lower jiao",
+        "Emerges on the lateral chest near PC-1 (4th intercostal space)",
+        "Runs along the inner arm between the Lung and Heart channels down the center of the anterior forearm",
+        "Passes the wrist at PC-7 through the carpal tunnel into the palm"
+      ],
+      "branches": [
+        "Branch from the palm connects to the San Jiao meridian at the ring finger"
+      ],
+      "connections": [
+        "Upper, middle, and lower jiao",
+        "San Jiao meridian"
+      ],
+      "notable_points": [
+        "PC-6 Neiguan",
+        "PC-8 Laogong"
+      ]
+    },
+    {
+      "name": "San Jiao (Triple Burner)",
+      "code": "SJ",
+      "chinese_name": "手少阳三焦经",
+      "start": "Ulnar side of the ring finger (SJ-1)",
+      "end": "Lateral end of the eyebrow (SJ-23)",
+      "course": [
+        "Runs up the back of the hand and posterior arm, passing the elbow near SJ-10 and along the shoulder",
+        "Reaches the supraclavicular fossa near ST-12",
+        "External branch ascends the neck, goes around the ear, and circles to the temple before ending at SJ-23"
+      ],
+      "branches": [
+        "Internal branch descends through the upper, middle, and lower jiao connecting to the pericardium and three divisions of the torso"
+      ],
+      "connections": [
+        "Pericardium"
+      ],
+      "notable_points": [
+        "SJ-5 Waiguan",
+        "SJ-21 Ermen"
+      ]
+    },
+    {
+      "name": "Gallbladder",
+      "code": "GB",
+      "chinese_name": "足少阳胆经",
+      "start": "Outer canthus of the eye (GB-1)",
+      "end": "Lateral side of the 4th toe (GB-44)",
+      "course": [
+        "Ascends to the corner of the forehead",
+        "Winds down behind the ear passing GB-12 and zigzags across the side of the head through points like GB-14",
+        "Travels down the side of the neck to the top of the shoulder (GB-21) and along the lateral ribcage",
+        "Continues down the side of the torso and lateral hip, encircling the gluteal region",
+        "Runs down the lateral thigh and leg, past the knee and fibula to the anterior lateral malleolus"
+      ],
+      "branches": [],
+      "connections": [],
+      "notable_points": [
+        "GB-20 Fengchi",
+        "GB-41 Zulinqi"
+      ]
+    },
+    {
+      "name": "Liver",
+      "code": "LV",
+      "chinese_name": "足厥阴肝经",
+      "start": "Lateral side of the big toe (LV-1)",
+      "end": "Costal region below the breasts at LV-14",
+      "course": [
+        "Runs along the top of the foot to the ankle and ascends in front of the medial malleolus",
+        "Travels up the medial lower leg and knee, then along the inner thigh to the pubic region",
+        "Encircles the external genitalia and ascends the lower abdomen connecting internally with the Liver and Gallbladder organs",
+        "Continues upward along the abdomen and chest to LV-14 in the 6th intercostal space"
+      ],
+      "branches": [
+        "Internal branch rises through the diaphragm, along the throat to the nasopharynx, connecting to the eyes and the vertex"
+      ],
+      "connections": [
+        "Liver organ",
+        "Gallbladder organ"
+      ],
+      "notable_points": [
+        "LV-3 Taichong",
+        "LV-14 Qimen"
+      ]
+    },
+    {
+      "name": "Conception Vessel",
+      "code": "Ren Mai",
+      "chinese_name": "任脉",
+      "start": "Lower abdomen/uterus; emerges at the perineum (Ren-1)",
+      "end": "Depression between the lower lip and chin (Ren-24)",
+      "course": [
+        "Ascends the anterior midline from the perineum through the pubic area (Ren-2)",
+        "Continues up the belly passing Ren-6 and Ren-8 at the navel",
+        "Travels through the chest at Ren-17 on the sternum to the throat and chin"
+      ],
+      "branches": [],
+      "connections": [
+        "All yin channels (Sea of Yin)"
+      ],
+      "notable_points": [
+        "Ren-1",
+        "Ren-2",
+        "Ren-6",
+        "Ren-8",
+        "Ren-17",
+        "Ren-24"
+      ]
+    },
+    {
+      "name": "Governing Vessel",
+      "code": "Du Mai",
+      "chinese_name": "督脉",
+      "start": "Lower abdomen; emerges at the perineum near the tailbone (Du-1)",
+      "end": "Upper gum inside the mouth at Du-28",
+      "course": [
+        "Ascends the midline of the spine through the lumbar and thoracic vertebrae (including Du-4 at L2 and Du-14 at C7)",
+        "Continues up the neck and over the head along the midline to Du-20 at the crown",
+        "Descends down the forehead to end at the upper gum inside the mouth"
+      ],
+      "branches": [],
+      "connections": [
+        "All yang channels (Sea of Yang)"
+      ],
+      "notable_points": [
+        "Du-1",
+        "Du-4",
+        "Du-14",
+        "Du-20",
+        "Du-28"
+      ]
+    }
+  ]
+}

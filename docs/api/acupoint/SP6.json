@@ -1,0 +1,29 @@
+{
+  "success": true,
+  "acupoint": {
+    "code": "SP6",
+    "chinese_name": "三阴交",
+    "english_name": "Sanyinjiao",
+    "pinyin": "sanyinjiao",
+    "meridian": "Spleen",
+    "meridian_chinese": "足太阴脾经",
+    "standard_location": "在小腿内侧，当足内踝尖上3寸，胫骨内侧缘后方",
+    "standard_location_en": "On the medial side of the lower leg, 3 cun above the tip of the medial malleolus, posterior to the medial border of the tibia",
+    "simple_method": "内踝尖向上四横指（3寸），胫骨后缘凹陷处",
+    "simple_method_en": "Four finger-widths above the inner ankle bone, just behind the shin bone.",
+    "anatomical": "在胫骨后缘和比目鱼肌之间；有大隐静脉，胫后动静脉；布有小腿内侧皮神经，深层后方有胫神经",
+    "indications": [
+      "月经不调 (irregular menstruation)",
+      "痛经 (dysmenorrhea)",
+      "失眠 (insomnia)",
+      "消化不良 (indigestion)",
+      "下肢痿痹 (lower limb weakness)"
+    ],
+    "functions": [
+      "健脾化湿 (strengthen spleen, transform dampness)",
+      "调经止带 (regulate menstruation)",
+      "滋阴补肾 (nourish yin, tonify kidney)"
+    ],
+    "caution": "孕妇慎用 (Use with caution in pregnancy)"
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "success": true,
+  "acupoint": {
+    "code": "LV3",
+    "chinese_name": "太冲",
+    "english_name": "Taichong",
+    "pinyin": "taichong",
+    "meridian": "Liver",
+    "meridian_chinese": "足厥阴肝经",
+    "standard_location": "在足背，当第1、2跖骨结合部之前凹陷中",
+    "standard_location_en": "On the dorsum of the foot, in the depression proximal to the 1st metatarsal space",
+    "simple_method": "足背第一、二趾骨之间，往脚踝方向推，推到两骨交汇处的凹陷",
+    "simple_method_en": "On top of foot between big toe and 2nd toe. Slide finger toward ankle until you feel a depression where the bones meet.",
+    "anatomical": "第一跖骨间隙的背侧；有足背静脉网，第一跖背动脉；布有腓深神经",
+    "indications": [
+      "头痛眩晕 (headache, dizziness)",
+      "目赤肿痛 (red swollen eyes)",
+      "胁痛 (hypochondriac pain)",
+      "月经不调 (irregular menstruation)",
+      "情志抑郁 (emotional depression)"
+    ],
+    "functions": [
+      "疏肝理气 (soothe liver, regulate qi)",
+      "平肝熄风 (calm liver, extinguish wind)",
+      "清热利湿 (clear heat, drain dampness)"
+    ]
+  }
+}

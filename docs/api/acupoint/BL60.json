@@ -1,0 +1,28 @@
+{
+  "success": true,
+  "acupoint": {
+    "code": "BL60",
+    "chinese_name": "昆仑",
+    "english_name": "Kunlun",
+    "pinyin": "kunlun",
+    "meridian": "Bladder",
+    "meridian_chinese": "足太阳膀胱经",
+    "standard_location": "在踝区，外踝尖与跟腱之间的凹陷中",
+    "standard_location_en": "In the depression between the tip of the lateral malleolus and the Achilles tendon",
+    "simple_method": "外脚踝骨最高点与跟腱之间的凹陷处",
+    "simple_method_en": "Find the hollow between the outer ankle bone and the Achilles tendon.",
+    "anatomical": "有腓骨短肌，小隐静脉及腓肠神经",
+    "indications": [
+      "头痛项强 (headache, neck stiffness)",
+      "腰骶痛 (lumbosacral pain)",
+      "踝关节痛 (ankle pain)",
+      "坐骨神经痛 (sciatica)",
+      "难产 (difficult labor)"
+    ],
+    "functions": [
+      "舒筋活络 (relax sinews, activate collaterals)",
+      "散风清热 (dispel wind, clear heat)",
+      "安神定志 (calm spirit)"
+    ]
+  }
+}

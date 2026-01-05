@@ -1,0 +1,29 @@
+{
+  "success": true,
+  "acupoint": {
+    "code": "LI4",
+    "chinese_name": "合谷",
+    "english_name": "Hegu",
+    "pinyin": "hegu",
+    "meridian": "Large Intestine",
+    "meridian_chinese": "手阳明大肠经",
+    "standard_location": "在手背，第1、2掌骨间，当第2掌骨桡侧的中点处",
+    "standard_location_en": "On the dorsum of the hand, between the 1st and 2nd metacarpal bones, at the midpoint of the 2nd metacarpal bone on the radial side",
+    "simple_method": "拇指、食指并拢，虎口处肌肉隆起最高点",
+    "simple_method_en": "Press thumb and index finger together. The point is at the highest bulge of muscle in the web space.",
+    "anatomical": "第一骨间背侧肌中；有手背静脉网，桡动脉从手背穿向手掌；布有桡神经浅支",
+    "indications": [
+      "头痛 (headache)",
+      "牙痛 (toothache)",
+      "咽喉肿痛 (sore throat)",
+      "感冒发热 (cold and fever)",
+      "腹痛便秘 (abdominal pain, constipation)"
+    ],
+    "functions": [
+      "疏风解表 (dispel wind, release exterior)",
+      "通经活络 (unblock meridians)",
+      "镇静止痛 (calm and relieve pain)"
+    ],
+    "caution": "孕妇禁用 (Contraindicated in pregnancy)"
+  }
+}

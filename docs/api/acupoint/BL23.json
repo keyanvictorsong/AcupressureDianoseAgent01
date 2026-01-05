@@ -1,0 +1,28 @@
+{
+  "success": true,
+  "acupoint": {
+    "code": "BL23",
+    "chinese_name": "肾俞",
+    "english_name": "Shenshu",
+    "pinyin": "shenshu",
+    "meridian": "Bladder",
+    "meridian_chinese": "足太阳膀胱经",
+    "standard_location": "在腰部，当第2腰椎棘突下，旁开1.5寸",
+    "standard_location_en": "On the lower back, 1.5 cun lateral to the lower border of the spinous process of the 2nd lumbar vertebra (L2)",
+    "simple_method": "俯卧，在第二腰椎棘突下（与肚脐水平），旁开约两横指处",
+    "simple_method_en": "Prone position. Find L2 spinous process (level with navel), then 2 finger-widths lateral to it.",
+    "anatomical": "腰背筋膜，最长肌；有第2腰动静脉后支，深层为腰丛",
+    "indications": [
+      "腰痛 (low back pain)",
+      "肾虚腰酸 (kidney deficiency back soreness)",
+      "遗精阳痿 (seminal emission, impotence)",
+      "月经不调 (irregular menstruation)",
+      "耳鸣耳聋 (tinnitus, deafness)"
+    ],
+    "functions": [
+      "补肾益精 (tonify kidney, benefit essence)",
+      "强腰壮骨 (strengthen lumbar and bones)",
+      "温阳利水 (warm yang, promote urination)"
+    ]
+  }
+}

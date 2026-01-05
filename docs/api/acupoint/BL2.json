@@ -1,0 +1,27 @@
+{
+  "success": true,
+  "acupoint": {
+    "code": "BL2",
+    "chinese_name": "攒竹",
+    "english_name": "Zanzhu",
+    "pinyin": "zanzhu",
+    "meridian": "Bladder",
+    "meridian_chinese": "足太阳膀胱经",
+    "standard_location": "在面部，当眉头陷中，眶上切迹处",
+    "standard_location_en": "On the face, in the depression at the medial end of the eyebrow, at the supraorbital notch",
+    "simple_method": "眉毛内侧端，眉头凹陷处",
+    "simple_method_en": "At the inner end of the eyebrow, in the small depression.",
+    "anatomical": "有额肌及皱眉肌；有额动静脉；布有额神经内侧支",
+    "indications": [
+      "头痛 (headache)",
+      "眉棱骨痛 (supraorbital pain)",
+      "目视不明 (blurred vision)",
+      "流泪 (tearing)",
+      "眼睑动 (eyelid twitching)"
+    ],
+    "functions": [
+      "祛风明目 (dispel wind, brighten eyes)",
+      "清热止痛 (clear heat, relieve pain)"
+    ]
+  }
+}

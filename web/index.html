@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>穴位诊断 | Acupressure Chat</title>
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+        .chat-container {
+            flex: 1;
+            max-width: 800px;
+            width: 100%;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            padding: 20px;
+        }
+        header {
+            text-align: center;
+            color: white;
+            padding: 20px 0;
+        }
+        header h1 { font-size: 1.8rem; }
+        header p { opacity: 0.9; font-size: 14px; }
+
+        .chat-messages {
+            flex: 1;
+            background: white;
+            border-radius: 16px 16px 0 0;
+            padding: 20px;
+            overflow-y: auto;
+            max-height: 60vh;
+        }
+        .message {
+            margin-bottom: 20px;
+            animation: fadeIn 0.3s;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .message.user {
+            text-align: right;
+        }
+        .message.user .bubble {
+            background: #667eea;
+            color: white;
+            display: inline-block;
+            padding: 12px 18px;
+            border-radius: 18px 18px 4px 18px;
+            max-width: 80%;
+        }
+        .message.bot .bubble {
+            background: #f0f0f0;
+            color: #333;
+            display: inline-block;
+            padding: 12px 18px;
+            border-radius: 18px 18px 18px 4px;
+            max-width: 90%;
+        }
+        .message.bot .bubble.full-width {
+            display: block;
+            max-width: 100%;
+        }
+
+        .acupoint-card {
+            background: white;
+            border-radius: 12px;
+            padding: 15px;
+            margin: 10px 0;
+            border-left: 4px solid #667eea;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        .acupoint-card h3 {
+            color: #667eea;
+            margin-bottom: 10px;
+            font-size: 16px;
+        }
+        .acupoint-card .code {
+            background: #667eea;
+            color: white;
+            padding: 3px 8px;
+            border-radius: 4px;
+            font-size: 12px;
+            margin-right: 8px;
+        }
+        .image-gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-top: 10px;
+        }
+        .image-gallery img {
+            width: 120px;
+            height: 120px;
+            object-fit: cover;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: transform 0.2s;
+            border: 2px solid #e0e0e0;
+        }
+        .image-gallery img:hover {
+            transform: scale(1.05);
+            border-color: #667eea;
+        }
+
+        .chat-input-area {
+            background: white;
+            border-radius: 0 0 16px 16px;
+            padding: 15px 20px;
+            display: flex;
+            gap: 10px;
+            box-shadow: 0 -2px 10px rgba(0,0,0,0.1);
+        }
+        .chat-input {
+            flex: 1;
+            padding: 12px 18px;
+            border: 2px solid #e0e0e0;
+            border-radius: 25px;
+            font-size: 16px;
+            outline: none;
+        }
+        .chat-input:focus { border-color: #667eea; }
+        .send-btn {
+            background: #667eea;
+            color: white;
+            border: none;
+            padding: 12px 25px;
+            border-radius: 25px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background 0.3s;
+        }
+        .send-btn:hover { background: #5a6fd6; }
+        .send-btn:disabled { background: #ccc; cursor: not-allowed; }
+
+        .quick-btns {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            padding: 10px 0;
+        }
+        .quick-btn {
+            padding: 8px 15px;
+            border: 1px solid #ddd;
+            background: white;
+            border-radius: 20px;
+            cursor: pointer;
+            font-size: 13px;
+            transition: all 0.2s;
+        }
+        .quick-btn:hover {
+            border-color: #667eea;
+            color: #667eea;
+        }
+
+        .disclaimer {
+            background: #fff3cd;
+            color: #856404;
+            padding: 10px 15px;
+            border-radius: 8px;
+            margin-top: 10px;
+            font-size: 13px;
+        }
+        .loading { color: #888; font-style: italic; }
+
+        @media (max-width: 600px) {
+            .image-gallery img { width: 80px; height: 80px; }
+            header h1 { font-size: 1.4rem; }
+        }
+    </style>
+</head>
+<body>
+    <div class="chat-container">
+        <header>
+            <h1>🎯 穴位诊断助手</h1>
+            <p>告诉我你哪里不舒服，我来推荐穴位按摩</p>
+        </header>
+
+        <div class="chat-messages" id="chatMessages">
+            <div class="message bot">
+                <div class="bubble">
+                    你好！我是穴位诊断助手。告诉我你哪里不舒服？<br>
+                    <small>例如：我头痛、我失眠、我腰疼...</small>
+                </div>
+            </div>
+            <div class="message bot">
+                <div class="bubble">
+                    <div class="quick-btns" id="quickBtns">
+                        <!-- Quick buttons loaded here -->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="chat-input-area">
+            <input type="text" class="chat-input" id="chatInput"
+                   placeholder="描述你的症状... (如: 我头痛)" autofocus>
+            <button class="send-btn" id="sendBtn" onclick="sendMessage()">发送</button>
+        </div>
+    </div>
+
+    <script>
+        const API_BASE = 'http://localhost:8080';
+        const chatMessages = document.getElementById('chatMessages');
+        const chatInput = document.getElementById('chatInput');
+        const sendBtn = document.getElementById('sendBtn');
+
+        // Quick symptom buttons
+        const quickSymptoms = [
+            { text: '🤕 头痛', query: '我头痛' },
+            { text: '😴 失眠', query: '我失眠睡不着' },
+            { text: '😰 焦虑', query: '我很焦虑紧张' },
+            { text: '💆 颈椎痛', query: '我脖子僵硬' },
+            { text: '🦴 腰痛', query: '我腰疼' },
+            { text: '🤢 恶心', query: '我恶心想吐' },
+        ];
+
+        function loadQuickButtons() {
+            const container = document.getElementById('quickBtns');
+            quickSymptoms.forEach(s => {
+                const btn = document.createElement('button');
+                btn.className = 'quick-btn';
+                btn.textContent = s.text;
+                btn.onclick = () => {
+                    chatInput.value = s.query;
+                    sendMessage();
+                };
+                container.appendChild(btn);
+            });
+        }
+
+        function addMessage(content, isUser = false) {
+            const div = document.createElement('div');
+            div.className = `message ${isUser ? 'user' : 'bot'}`;
+            div.innerHTML = `<div class="bubble ${!isUser ? 'full-width' : ''}">${content}</div>`;
+            chatMessages.appendChild(div);
+            chatMessages.scrollTop = chatMessages.scrollHeight;
+        }
+
+        async function sendMessage() {
+            const message = chatInput.value.trim();
+            if (!message) return;
+
+            // Show user message
+            addMessage(message, true);
+            chatInput.value = '';
+            sendBtn.disabled = true;
+
+            // Show loading
+            addMessage('<span class="loading">分析中...</span>');
+
+            try {
+                const res = await fetch(`${API_BASE}/chat`, {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ message })
+                });
+                const data = await res.json();
+
+                // Remove loading message
+                chatMessages.lastChild.remove();
+
+                if (!data.success) {
+                    addMessage(`😅 ${data.message.replace(/\n/g, '<br>')}`);
+                    return;
+                }
+
+                let html = '';
+
+                // Check if this is an LLM response
+                if (data.mode === 'llm') {
+                    // Format LLM response with line breaks
+                    const formattedResponse = data.llm_response
+                        .replace(/【/g, '<br><strong>【')
+                        .replace(/】/g, '】</strong>')
+                        .replace(/\n/g, '<br>');
+                    html = `<div style="line-height: 1.8;">${formattedResponse}</div>`;
+
+                    // Show recommended acupoints with images
+                    if (data.recommended_acupoints && data.recommended_acupoints.length > 0) {
+                        for (const point of data.recommended_acupoints) {
+                            const imgRes = await fetch(`${API_BASE}/images/${point.code}`);
+                            const imgData = await imgRes.json();
+
+                            html += `
+                                <div class="acupoint-card">
+                                    <h3>
+                                        <span class="code">${point.code}</span>
+                                        ${point.chinese_name || ''} ${point.name || ''}
+                                    </h3>
+                                    <div class="image-gallery">
+                                        ${imgData.images.slice(0, 6).map(img =>
+                                            `<img src="${API_BASE}${img}" alt="${point.code}" onclick="window.open(this.src)">`
+                                        ).join('')}
+                                    </div>
+                                </div>
+                            `;
+                        }
+                    }
+                } else {
+                    // Standard keyword-matched response
+                    const diagnosis = data.diagnosis;
+                    html = `<strong>找到了！针对「${diagnosis.symptom}」推荐以下穴位：</strong>`;
+
+                    // Load images for each acupoint
+                    for (const point of diagnosis.acupoints) {
+                        const imgRes = await fetch(`${API_BASE}/images/${point.code}`);
+                        const imgData = await imgRes.json();
+
+                        html += `
+                            <div class="acupoint-card">
+                                <h3>
+                                    <span class="code">${point.code}</span>
+                                    ${point.chinese_name || ''} ${point.name}
+                                </h3>
+                                <div class="image-gallery">
+                                    ${imgData.images.slice(0, 6).map(img =>
+                                        `<img src="${API_BASE}${img}" alt="${point.code}" onclick="window.open(this.src)">`
+                                    ).join('')}
+                                </div>
+                            </div>
+                        `;
+                    }
+
+                    html += `<div class="disclaimer">⚠️ ${diagnosis.disclaimer}</div>`;
+                }
+
+                addMessage(html);
+
+            } catch (e) {
+                chatMessages.lastChild.remove();
+                addMessage('😕 无法连接服务器，请确保 API 正在运行');
+            }
+
+            sendBtn.disabled = false;
+        }
+
+        // Enter key to send
+        chatInput.addEventListener('keyup', (e) => {
+            if (e.key === 'Enter') sendMessage();
+        });
+
+        // Initialize
+        loadQuickButtons();
+    </script>
+</body>
+</html>

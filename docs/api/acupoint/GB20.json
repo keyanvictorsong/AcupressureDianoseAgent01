@@ -1,0 +1,28 @@
+{
+  "success": true,
+  "acupoint": {
+    "code": "GB20",
+    "chinese_name": "风池",
+    "english_name": "Fengchi",
+    "pinyin": "fengchi",
+    "meridian": "Gallbladder",
+    "meridian_chinese": "足少阳胆经",
+    "standard_location": "在项部，当枕骨之下，与风府相平，胸锁乳突肌与斜方肌上端之间的凹陷中",
+    "standard_location_en": "At the nape, below the occipital bone, in the depression between the upper portion of sternocleidomastoid and trapezius muscles",
+    "simple_method": "后脑勺下方，颈后两侧大筋外侧的凹陷处，与耳垂齐平",
+    "simple_method_en": "At the base of skull, in the hollows on either side of the two big neck tendons, level with the earlobes.",
+    "anatomical": "在胸锁乳突肌与斜方肌上端附着部之间的凹陷中；有枕动静脉分支；布有枕小神经分支",
+    "indications": [
+      "头痛 (headache)",
+      "颈项强痛 (neck stiffness and pain)",
+      "目赤肿痛 (red swollen eyes)",
+      "感冒 (common cold)",
+      "眩晕 (dizziness)"
+    ],
+    "functions": [
+      "疏风清热 (dispel wind, clear heat)",
+      "明目聪耳 (brighten eyes, sharpen hearing)",
+      "通络止痛 (unblock collaterals, relieve pain)"
+    ]
+  }
+}

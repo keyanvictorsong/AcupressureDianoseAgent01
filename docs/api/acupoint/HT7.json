@@ -1,0 +1,28 @@
+{
+  "success": true,
+  "acupoint": {
+    "code": "HT7",
+    "chinese_name": "神门",
+    "english_name": "Shenmen",
+    "pinyin": "shenmen",
+    "meridian": "Heart",
+    "meridian_chinese": "手少阴心经",
+    "standard_location": "在腕部，腕掌侧横纹尺侧端，尺侧腕屈肌腱的桡侧凹陷处",
+    "standard_location_en": "At the wrist, on the ulnar end of the transverse crease, in the depression on the radial side of the flexor carpi ulnaris tendon",
+    "simple_method": "手腕横纹小指侧，小指侧大筋（尺侧腕屈肌腱）靠拇指侧的凹陷中",
+    "simple_method_en": "At wrist crease on pinky side, find the big tendon, then feel the depression just toward the thumb side of it.",
+    "anatomical": "在尺侧腕屈肌腱与指浅屈肌之间；有尺动脉；布有前臂内侧皮神经，尺神经",
+    "indications": [
+      "心悸怔忡 (palpitations)",
+      "失眠健忘 (insomnia, poor memory)",
+      "癫狂 (mania)",
+      "心痛 (heart pain)",
+      "焦虑烦躁 (anxiety, irritability)"
+    ],
+    "functions": [
+      "宁心安神 (calm heart, tranquilize spirit)",
+      "清心火 (clear heart fire)",
+      "通络止痛 (unblock collaterals, relieve pain)"
+    ]
+  }
+}

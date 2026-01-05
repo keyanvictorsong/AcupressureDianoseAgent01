@@ -1,0 +1,27 @@
+{
+  "success": true,
+  "acupoint": {
+    "code": "EX-HN5",
+    "chinese_name": "太阳",
+    "english_name": "Taiyang",
+    "pinyin": "taiyang",
+    "meridian": "Extra",
+    "meridian_chinese": "经外奇穴",
+    "standard_location": "在颞部，当眉梢与目外眦之间，向后约一横指的凹陷处",
+    "standard_location_en": "In the temporal region, in the depression about one finger-breadth posterior to the midpoint between the lateral end of the eyebrow and the outer canthus",
+    "simple_method": "眉梢和眼角中间，向后一横指的凹陷（太阳穴）",
+    "simple_method_en": "In the temple area: find the point between eyebrow tip and outer eye corner, then one finger-width back into the depression.",
+    "anatomical": "在颞筋膜和颞肌之间；有颞浅动静脉；布有耳颞神经及面神经的颧支",
+    "indications": [
+      "头痛 (headache)",
+      "偏头痛 (migraine)",
+      "目赤肿痛 (red swollen eyes)",
+      "目眩 (dizziness)",
+      "牙痛 (toothache)"
+    ],
+    "functions": [
+      "清肝明目 (clear liver, brighten eyes)",
+      "疏风止痛 (dispel wind, relieve pain)"
+    ]
+  }
+}

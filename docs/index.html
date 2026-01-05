@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>穴位诊断助手 | Acupressure Diagnosis</title>
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 16px;
+            padding: 30px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+        }
+        h1 { color: #667eea; margin-bottom: 10px; }
+        .subtitle { color: #666; margin-bottom: 30px; }
+        .section { margin-bottom: 30px; }
+        .section h2 { color: #333; font-size: 18px; margin-bottom: 15px; border-bottom: 2px solid #667eea; padding-bottom: 5px; }
+        .btn-grid { display: flex; flex-wrap: wrap; gap: 10px; }
+        .btn {
+            padding: 12px 20px;
+            border: 2px solid #667eea;
+            border-radius: 25px;
+            background: white;
+            color: #667eea;
+            cursor: pointer;
+            font-size: 14px;
+            transition: all 0.3s;
+        }
+        .btn:hover { background: #667eea; color: white; }
+        .result {
+            background: #f5f5f5;
+            border-radius: 12px;
+            padding: 20px;
+            margin-top: 20px;
+            display: none;
+        }
+        .result.show { display: block; }
+        .acupoint-card {
+            background: white;
+            border-radius: 12px;
+            padding: 15px;
+            margin: 10px 0;
+            border-left: 4px solid #667eea;
+        }
+        .acupoint-card h3 { color: #667eea; }
+        .code {
+            background: #667eea;
+            color: white;
+            padding: 3px 8px;
+            border-radius: 4px;
+            font-size: 12px;
+            margin-right: 8px;
+        }
+        .images { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 10px; }
+        .images img {
+            width: 100px;
+            height: 100px;
+            object-fit: cover;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+        .disclaimer {
+            background: #fff3cd;
+            color: #856404;
+            padding: 15px;
+            border-radius: 8px;
+            margin-top: 20px;
+            font-size: 13px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🎯 穴位诊断助手</h1>
+        <p class="subtitle">选择你的症状，获取穴位按摩建议</p>
+
+        <div class="section">
+            <h2>常见症状</h2>
+            <div class="btn-grid">
+                <button class="btn" onclick="diagnose('headache')">🤕 头痛</button>
+                <button class="btn" onclick="diagnose('insomnia')">😴 失眠</button>
+                <button class="btn" onclick="diagnose('anxiety')">😰 焦虑</button>
+                <button class="btn" onclick="diagnose('neck')">💆 颈肩痛</button>
+                <button class="btn" onclick="diagnose('low_back_pain')">🦴 腰痛</button>
+                <button class="btn" onclick="diagnose('nausea')">🤢 恶心</button>
+            </div>
+        </div>
+
+        <div class="result" id="result"></div>
+
+        <div class="disclaimer">
+            ⚠️ 本工具仅供健康参考，不能替代专业医疗诊断。如有严重症状请及时就医。
+        </div>
+    </div>
+
+    <script>
+        const BASE = window.location.origin + window.location.pathname.replace(/\/[^\/]*$/, '');
+
+        async function diagnose(symptom) {
+            const resultDiv = document.getElementById('result');
+            resultDiv.innerHTML = '<p>加载中...</p>';
+            resultDiv.classList.add('show');
+
+            try {
+                const res = await fetch(`${BASE}/api/diagnose/${symptom}.json`);
+                const data = await res.json();
+
+                let html = `<h3>针对「${data.symptom}」推荐穴位：</h3>`;
+
+                for (const point of data.acupoints) {
+                    // Fetch images
+                    let images = [];
+                    try {
+                        const imgRes = await fetch(`${BASE}/api/images/${point.code}.json`);
+                        const imgData = await imgRes.json();
+                        images = imgData.images || [];
+                    } catch(e) {}
+
+                    html += `
+                        <div class="acupoint-card">
+                            <h3><span class="code">${point.code}</span>${point.chinese_name || ''} ${point.name}</h3>
+                            <p>${point.location_hint || ''}</p>
+                            <div class="images">
+                                ${images.slice(0, 4).map(img =>
+                                    `<img src="${BASE}${img}" onclick="window.open(this.src)" alt="${point.code}">`
+                                ).join('')}
+                            </div>
+                        </div>
+                    `;
+                }
+
+                resultDiv.innerHTML = html;
+            } catch(e) {
+                resultDiv.innerHTML = '<p>加载失败，请稍后重试</p>';
+            }
+        }
+    </script>
+</body>
+</html>

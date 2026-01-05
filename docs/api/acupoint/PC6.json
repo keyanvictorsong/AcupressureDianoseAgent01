@@ -1,0 +1,28 @@
+{
+  "success": true,
+  "acupoint": {
+    "code": "PC6",
+    "chinese_name": "内关",
+    "english_name": "Neiguan",
+    "pinyin": "neiguan",
+    "meridian": "Pericardium",
+    "meridian_chinese": "手厥阴心包经",
+    "standard_location": "在前臂掌侧，当曲泽与大陵的连线上，腕横纹上2寸，掌长肌腱与桡侧腕屈肌腱之间",
+    "standard_location_en": "On the palmar side of the forearm, 2 cun above the wrist crease, between the tendons of palmaris longus and flexor carpi radialis",
+    "simple_method": "手腕横纹向上三横指（2寸），两筋之间",
+    "simple_method_en": "Three finger-widths above wrist crease, between the two tendons in the center of the inner forearm.",
+    "anatomical": "在掌长肌腱与桡侧腕屈肌腱之间；有前臂正中动静脉，深层为前臂掌侧骨间动静脉；布有前臂内侧皮神经，正中神经",
+    "indications": [
+      "心悸 (palpitations)",
+      "胸闷 (chest oppression)",
+      "恶心呕吐 (nausea, vomiting)",
+      "失眠 (insomnia)",
+      "晕车晕船 (motion sickness)"
+    ],
+    "functions": [
+      "宁心安神 (calm heart, tranquilize spirit)",
+      "理气止痛 (regulate qi, relieve pain)",
+      "和胃降逆 (harmonize stomach, descend rebellious qi)"
+    ]
+  }
+}

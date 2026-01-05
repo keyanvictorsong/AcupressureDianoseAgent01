@@ -1,0 +1,28 @@
+{
+  "success": true,
+  "acupoint": {
+    "code": "EX-HN3",
+    "chinese_name": "印堂",
+    "english_name": "Yintang",
+    "pinyin": "yintang",
+    "meridian": "Extra",
+    "meridian_chinese": "经外奇穴",
+    "standard_location": "在额部，当两眉头之中间",
+    "standard_location_en": "On the forehead, at the midpoint between the two eyebrows",
+    "simple_method": "两眉头连线的正中点",
+    "simple_method_en": "Exactly midway between the inner ends of the eyebrows.",
+    "anatomical": "在降眉间肌中；有额动静脉分支；布有滑车上神经分支",
+    "indications": [
+      "头痛 (headache)",
+      "眩晕 (dizziness)",
+      "鼻渊 (nasal congestion)",
+      "失眠 (insomnia)",
+      "小儿惊风 (infantile convulsions)"
+    ],
+    "functions": [
+      "清头明目 (clear head, brighten eyes)",
+      "通鼻开窍 (unblock nose, open orifices)",
+      "宁心安神 (calm heart, tranquilize spirit)"
+    ]
+  }
+}

@@ -1,0 +1,69 @@
+/* pages/detail/detail.wxss */
+
+.detail-container {
+  padding: 30rpx;
+  background: #f5f5f5;
+  min-height: 100vh;
+}
+
+.header {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  padding: 40rpx;
+  border-radius: 24rpx;
+  color: #fff;
+  margin-bottom: 30rpx;
+}
+
+.code {
+  background: rgba(255, 255, 255, 0.2);
+  padding: 8rpx 20rpx;
+  border-radius: 8rpx;
+  font-size: 28rpx;
+}
+
+.name {
+  display: block;
+  font-size: 48rpx;
+  font-weight: bold;
+  margin-top: 20rpx;
+}
+
+.english {
+  display: block;
+  font-size: 28rpx;
+  opacity: 0.8;
+  margin-top: 8rpx;
+}
+
+.section {
+  background: #fff;
+  padding: 30rpx;
+  border-radius: 16rpx;
+  margin-bottom: 20rpx;
+}
+
+.section-title {
+  display: block;
+  font-size: 28rpx;
+  color: #888;
+  margin-bottom: 16rpx;
+}
+
+.section-content {
+  font-size: 32rpx;
+  color: #333;
+  line-height: 1.6;
+}
+
+.image-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16rpx;
+}
+
+.image-grid image {
+  width: calc(50% - 8rpx);
+  height: 300rpx;
+  border-radius: 16rpx;
+  background: #f0f0f0;
+}

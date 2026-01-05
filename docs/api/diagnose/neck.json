@@ -1,0 +1,42 @@
+{
+  "success": true,
+  "symptom": "neck / shoulder tension",
+  "acupoints": [
+    {
+      "code": "GB21",
+      "name": "Shoulder Well",
+      "chinese_name": "肩井",
+      "location_hint": "Highest point of shoulder muscle midpoint",
+      "notes": "Releases upper trapezius tension; avoid in pregnancy."
+    },
+    {
+      "code": "GB20",
+      "name": "Gates of Consciousness",
+      "chinese_name": "风池",
+      "location_hint": "Base of skull, hollows beside tendons",
+      "notes": "Neck stiffness and occipital pain."
+    },
+    {
+      "code": "SI3",
+      "name": "Small Intestine 3",
+      "chinese_name": "后溪",
+      "location_hint": "Ulnar side of hand, proximal to little finger MCP joint",
+      "notes": "Neck/upper back channel opener (paired with BL62)."
+    },
+    {
+      "code": "SJ5",
+      "name": "Waiguan",
+      "chinese_name": "外关",
+      "location_hint": "Dorsal forearm, ~2 cun above wrist crease between radius/ulna",
+      "notes": "Releases exterior, relieves lateral neck pain."
+    },
+    {
+      "code": "LI4",
+      "name": "Union Valley",
+      "chinese_name": "合谷",
+      "location_hint": "Hand web between thumb and index finger",
+      "notes": "Adjunct for neck/shoulder tension; avoid in pregnancy."
+    }
+  ],
+  "disclaimer": "For educational reference only. Not medical advice or a substitute for professional care."
+}

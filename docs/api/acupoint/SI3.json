@@ -1,0 +1,28 @@
+{
+  "success": true,
+  "acupoint": {
+    "code": "SI3",
+    "chinese_name": "后溪",
+    "english_name": "Houxi",
+    "pinyin": "houxi",
+    "meridian": "Small Intestine",
+    "meridian_chinese": "手太阳小肠经",
+    "standard_location": "在手掌尺侧，微握拳，当小指本节（第5掌指关节）后的远侧掌横纹头赤白肉际",
+    "standard_location_en": "On the ulnar side of the hand, proximal to the 5th metacarpophalangeal joint, at the end of the transverse crease, at the junction of the red and white skin",
+    "simple_method": "握拳，小指根部关节后方，掌纹尽头处，红白肉交界处",
+    "simple_method_en": "Make a loose fist. Find the point at the end of the crease just below the pinky knuckle, where palm skin meets back-of-hand skin.",
+    "anatomical": "在小指展肌起点外缘；有指背动静脉，手背静脉网；布有尺神经手背支",
+    "indications": [
+      "头项强痛 (headache, neck stiffness)",
+      "目赤 (red eyes)",
+      "耳聋 (deafness)",
+      "咽喉肿痛 (sore throat)",
+      "腰背痛 (low back pain)"
+    ],
+    "functions": [
+      "疏风清热 (dispel wind, clear heat)",
+      "通督脉 (regulate Du vessel)",
+      "舒筋活络 (relax sinews, activate collaterals)"
+    ]
+  }
+}

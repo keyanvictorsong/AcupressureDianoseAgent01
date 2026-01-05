@@ -1,0 +1,29 @@
+{
+  "success": true,
+  "acupoint": {
+    "code": "GB21",
+    "chinese_name": "肩井",
+    "english_name": "Jianjing",
+    "pinyin": "jianjing",
+    "meridian": "Gallbladder",
+    "meridian_chinese": "足少阳胆经",
+    "standard_location": "在肩上，前直乳中，当大椎与肩峰端连线的中点上",
+    "standard_location_en": "On the shoulder, directly above the nipple, at the midpoint of the line connecting Dazhui (GV14) and the acromion",
+    "simple_method": "肩膀最高点，大椎穴与肩峰连线的中点，按压有酸胀感",
+    "simple_method_en": "At the highest point of the shoulder, midway between the neck and the shoulder tip. Press and feel soreness.",
+    "anatomical": "在斜方肌上缘中部；有颈横动静脉分支；布有锁骨上神经后支，副神经",
+    "indications": [
+      "肩背痛 (shoulder and back pain)",
+      "颈项强痛 (neck stiffness)",
+      "头痛 (headache)",
+      "乳痈 (mastitis)",
+      "难产 (difficult labor)"
+    ],
+    "functions": [
+      "疏通经络 (unblock meridians)",
+      "活血化瘀 (promote blood circulation)",
+      "消肿散结 (reduce swelling, dissipate masses)"
+    ],
+    "caution": "孕妇禁用 (Contraindicated in pregnancy)"
+  }
+}

@@ -1,0 +1,53 @@
+openapi: 3.0.1
+info:
+  title: 穴位诊断助手 API (Static)
+  description: 根据症状推荐穴位按摩方案，提供穴位位置图片 (静态托管版本)
+  version: 1.0.0
+servers:
+  - url: https://YOUR_USERNAME.github.io/YOUR_REPO
+paths:
+  /api/symptoms.json:
+    get:
+      operationId: listSymptoms
+      summary: 获取所有支持的症状列表
+      responses:
+        "200":
+          description: 症状列表
+
+  /api/acupoints.json:
+    get:
+      operationId: listAcupoints
+      summary: 获取所有穴位列表
+      responses:
+        "200":
+          description: 穴位列表
+
+  /api/diagnose/{symptom}.json:
+    get:
+      operationId: diagnoseSymptom
+      summary: 根据症状获取穴位推荐
+      parameters:
+        - name: symptom
+          in: path
+          required: true
+          schema:
+            type: string
+          description: 症状关键词 (headache, insomnia, anxiety, neck, low_back_pain, nausea)
+      responses:
+        "200":
+          description: 穴位推荐结果
+
+  /api/images/{code}.json:
+    get:
+      operationId: getAcupointImages
+      summary: 获取穴位图片列表
+      parameters:
+        - name: code
+          in: path
+          required: true
+          schema:
+            type: string
+          description: 穴位代码 (如 LI4, GB20, SP6)
+      responses:
+        "200":
+          description: 图片URL列表

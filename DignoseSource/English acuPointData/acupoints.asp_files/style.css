@@ -1,0 +1,13 @@
+/*---------- base ---------*/
+html, a
+
+html {
+background-color: #bfffbf;
+background:url(flower.gif)
+}
+
+a {blr:expression(this.onFocus=this.blur()); 
+text-decoration:none; 
+color:navy; 
+outline:none;}
+

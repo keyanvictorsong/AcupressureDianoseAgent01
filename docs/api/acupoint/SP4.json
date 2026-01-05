@@ -1,0 +1,28 @@
+{
+  "success": true,
+  "acupoint": {
+    "code": "SP4",
+    "chinese_name": "公孙",
+    "english_name": "Gongsun",
+    "pinyin": "gongsun",
+    "meridian": "Spleen",
+    "meridian_chinese": "足太阴脾经",
+    "standard_location": "在足内侧缘，当第一跖骨基底部的前下方",
+    "standard_location_en": "On the medial side of the foot, in the depression distal and inferior to the base of the 1st metatarsal bone",
+    "simple_method": "足大趾内侧，沿足弓向后摸到第一跖骨底部隆起，其前下方凹陷处",
+    "simple_method_en": "On inner edge of foot, find the bump at base of big toe bone, then slightly forward and down into the depression.",
+    "anatomical": "在拇展肌中；有足背静脉网，跗内侧动脉分支；布有隐神经及腓浅神经分支",
+    "indications": [
+      "胃痛 (stomach pain)",
+      "呕吐 (vomiting)",
+      "腹胀 (abdominal distension)",
+      "泄泻 (diarrhea)",
+      "心烦失眠 (irritability, insomnia)"
+    ],
+    "functions": [
+      "健脾和胃 (strengthen spleen, harmonize stomach)",
+      "理气止痛 (regulate qi, relieve pain)",
+      "通调冲脉 (regulate Chong vessel)"
+    ]
+  }
+}

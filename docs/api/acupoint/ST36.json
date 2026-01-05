@@ -1,0 +1,28 @@
+{
+  "success": true,
+  "acupoint": {
+    "code": "ST36",
+    "chinese_name": "足三里",
+    "english_name": "Zusanli",
+    "pinyin": "zusanli",
+    "meridian": "Stomach",
+    "meridian_chinese": "足阳明胃经",
+    "standard_location": "在小腿前外侧，当犊鼻下3寸，距胫骨前缘一横指",
+    "standard_location_en": "On the anterior lateral side of the leg, 3 cun below ST35 (Dubi), one finger-breadth lateral to the anterior crest of the tibia",
+    "simple_method": "膝盖外侧凹陷（外膝眼）下四横指，胫骨外侧一横指处",
+    "simple_method_en": "Four finger-widths below the outer knee depression, one finger-width lateral to the shin bone.",
+    "anatomical": "在胫骨前肌，趾长伸肌之间；有胫前动静脉；布有腓肠外侧皮神经及隐神经的皮支，深层为腓深神经",
+    "indications": [
+      "胃痛 (stomach pain)",
+      "消化不良 (indigestion)",
+      "腹泻便秘 (diarrhea, constipation)",
+      "虚劳乏力 (fatigue, weakness)",
+      "下肢���痹 (lower limb weakness)"
+    ],
+    "functions": [
+      "健脾和胃 (strengthen spleen, harmonize stomach)",
+      "扶正培元 (support upright qi, cultivate source)",
+      "通经活络 (unblock meridians)"
+    ]
+  }
+}

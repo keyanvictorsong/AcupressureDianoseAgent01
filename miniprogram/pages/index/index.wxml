@@ -1,0 +1,113 @@
+<!--pages/index/index.wxml-->
+<view class="chat-container">
+  <!-- 聊天消息区域 -->
+  <scroll-view
+    class="chat-messages"
+    scroll-y="true"
+    scroll-into-view="{{scrollToView}}"
+    scroll-with-animation="true"
+  >
+    <!-- 欢迎消息 -->
+    <view class="message bot">
+      <view class="bubble">
+        <text>你好！我是穴位诊断助手。告诉我你哪里不舒服？</text>
+        <text class="hint">例如：我头痛、我失眠、我腰疼...</text>
+      </view>
+    </view>
+
+    <!-- 快捷按钮 -->
+    <view class="message bot">
+      <view class="bubble">
+        <view class="quick-btns">
+          <view
+            class="quick-btn"
+            wx:for="{{quickSymptoms}}"
+            wx:key="text"
+            bindtap="onQuickTap"
+            data-query="{{item.query}}"
+          >
+            {{item.text}}
+          </view>
+        </view>
+      </view>
+    </view>
+
+    <!-- 动态消息列表 -->
+    <block wx:for="{{messages}}" wx:key="id">
+      <view class="message {{item.isUser ? 'user' : 'bot'}}" id="msg-{{item.id}}">
+        <view class="bubble {{item.isUser ? '' : 'full-width'}}">
+          <!-- 用户消息 -->
+          <text wx:if="{{item.isUser}}">{{item.content}}</text>
+
+          <!-- 机器人文本消息 -->
+          <text wx:elif="{{item.type === 'text'}}">{{item.content}}</text>
+
+          <!-- 加载中 -->
+          <view wx:elif="{{item.type === 'loading'}}" class="loading">
+            <text>分析中...</text>
+          </view>
+
+          <!-- 诊断结果 -->
+          <view wx:elif="{{item.type === 'diagnosis'}}">
+            <text class="result-title">{{item.title}}</text>
+
+            <!-- LLM 响应 -->
+            <view wx:if="{{item.llmResponse}}" class="llm-response">
+              <text>{{item.llmResponse}}</text>
+            </view>
+
+            <!-- 穴位卡片 -->
+            <view
+              class="acupoint-card"
+              wx:for="{{item.acupoints}}"
+              wx:for-item="point"
+              wx:key="code"
+              bindtap="onAcupointTap"
+              data-point="{{point}}"
+            >
+              <view class="card-header">
+                <text class="code">{{point.code}}</text>
+                <text class="name">{{point.chinese_name}} {{point.name}}</text>
+              </view>
+
+              <!-- 图片画廊 -->
+              <scroll-view class="image-gallery" scroll-x="true">
+                <image
+                  wx:for="{{point.images}}"
+                  wx:for-item="img"
+                  wx:key="*this"
+                  src="{{img}}"
+                  mode="aspectFill"
+                  bindtap="onImageTap"
+                  data-src="{{img}}"
+                  catch:tap="onImageTap"
+                />
+              </scroll-view>
+            </view>
+
+            <!-- 免责声明 -->
+            <view wx:if="{{item.disclaimer}}" class="disclaimer">
+              <text>{{item.disclaimer}}</text>
+            </view>
+          </view>
+        </view>
+      </view>
+    </block>
+
+    <!-- 底部占位 -->
+    <view class="bottom-spacer" id="bottom"></view>
+  </scroll-view>
+
+  <!-- 输入区域 -->
+  <view class="input-area">
+    <input
+      class="chat-input"
+      placeholder="描述你的症状... (如: 我头痛)"
+      value="{{inputValue}}"
+      bindinput="onInputChange"
+      bindconfirm="sendMessage"
+      confirm-type="send"
+    />
+    <button class="send-btn" bindtap="sendMessage" disabled="{{sending}}">发送</button>
+  </view>
+</view>

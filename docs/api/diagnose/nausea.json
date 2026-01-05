@@ -1,0 +1,42 @@
+{
+  "success": true,
+  "symptom": "nausea / vomiting / motion sickness",
+  "acupoints": [
+    {
+      "code": "PC6",
+      "name": "Neiguan",
+      "chinese_name": "内关",
+      "location_hint": "Inner forearm, ~3 finger-breadths above wrist crease, between tendons",
+      "notes": "Common anti-nausea/acupressure point; often used with wrist bands."
+    },
+    {
+      "code": "ST36",
+      "name": "Zusanli",
+      "chinese_name": "足三里",
+      "location_hint": "Below knee, one finger breadth lateral to tibia crest",
+      "notes": "Digestive support and qi boosting."
+    },
+    {
+      "code": "SP4",
+      "name": "Gongsun",
+      "chinese_name": "公孙",
+      "location_hint": "Medial foot, distal to base of 1st metatarsal",
+      "notes": "Often paired with PC6 for stomach/epigastric issues."
+    },
+    {
+      "code": "LI4",
+      "name": "Hegu",
+      "chinese_name": "合谷",
+      "location_hint": "Hand web between thumb and index finger",
+      "notes": "General pain/regulation point; avoid in pregnancy."
+    },
+    {
+      "code": "LV3",
+      "name": "Taichong",
+      "chinese_name": "太冲",
+      "location_hint": "Dorsum of foot between 1st and 2nd metatarsals",
+      "notes": "Moves Liver qi; used for nausea with stress component."
+    }
+  ],
+  "disclaimer": "For educational reference only. Not medical advice or a substitute for professional care."
+}

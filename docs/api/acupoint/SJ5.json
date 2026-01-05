@@ -1,0 +1,28 @@
+{
+  "success": true,
+  "acupoint": {
+    "code": "SJ5",
+    "chinese_name": "外关",
+    "english_name": "Waiguan",
+    "pinyin": "waiguan",
+    "meridian": "San Jiao",
+    "meridian_chinese": "手少阳三焦经",
+    "standard_location": "在前臂背侧，当阳池与肘尖的连线上，腕背横纹上2寸，尺骨与桡骨之间",
+    "standard_location_en": "On the dorsal side of the forearm, 2 cun above the dorsal wrist crease, between the ulna and radius",
+    "simple_method": "手腕背面横纹向上三横指（2寸），两骨之间",
+    "simple_method_en": "Three finger-widths above the back of the wrist crease, between the two forearm bones.",
+    "anatomical": "在指总伸肌与拇长伸肌之间；有前臂背侧骨间动静脉；布有前臂背侧皮神经，深层为前臂骨间背侧神经",
+    "indications": [
+      "热病 (febrile diseases)",
+      "头痛 (headache)",
+      "目赤肿痛 (red swollen eyes)",
+      "耳鸣耳聋 (tinnitus, deafness)",
+      "肩臂痛 (shoulder and arm pain)"
+    ],
+    "functions": [
+      "清热解毒 (clear heat, resolve toxins)",
+      "疏风通络 (dispel wind, unblock collaterals)",
+      "开窍聪耳 (open orifices, sharpen hearing)"
+    ]
+  }
+}

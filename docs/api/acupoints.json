@@ -1,0 +1,131 @@
+{
+  "count": 21,
+  "acupoints": [
+    {
+      "code": "GB30",
+      "chinese_name": "环跳",
+      "english_name": "Huantiao",
+      "meridian": "Gallbladder"
+    },
+    {
+      "code": "BL23",
+      "chinese_name": "肾俞",
+      "english_name": "Shenshu",
+      "meridian": "Bladder"
+    },
+    {
+      "code": "BL40",
+      "chinese_name": "委中",
+      "english_name": "Weizhong",
+      "meridian": "Bladder"
+    },
+    {
+      "code": "BL60",
+      "chinese_name": "昆仑",
+      "english_name": "Kunlun",
+      "meridian": "Bladder"
+    },
+    {
+      "code": "KI3",
+      "chinese_name": "太溪",
+      "english_name": "Taixi",
+      "meridian": "Kidney"
+    },
+    {
+      "code": "LI4",
+      "chinese_name": "合谷",
+      "english_name": "Hegu",
+      "meridian": "Large Intestine"
+    },
+    {
+      "code": "LV3",
+      "chinese_name": "太冲",
+      "english_name": "Taichong",
+      "meridian": "Liver"
+    },
+    {
+      "code": "PC6",
+      "chinese_name": "内关",
+      "english_name": "Neiguan",
+      "meridian": "Pericardium"
+    },
+    {
+      "code": "ST36",
+      "chinese_name": "足三里",
+      "english_name": "Zusanli",
+      "meridian": "Stomach"
+    },
+    {
+      "code": "SP6",
+      "chinese_name": "三阴交",
+      "english_name": "Sanyinjiao",
+      "meridian": "Spleen"
+    },
+    {
+      "code": "SP4",
+      "chinese_name": "公孙",
+      "english_name": "Gongsun",
+      "meridian": "Spleen"
+    },
+    {
+      "code": "HT7",
+      "chinese_name": "神门",
+      "english_name": "Shenmen",
+      "meridian": "Heart"
+    },
+    {
+      "code": "KI1",
+      "chinese_name": "涌泉",
+      "english_name": "Yongquan",
+      "meridian": "Kidney"
+    },
+    {
+      "code": "GB20",
+      "chinese_name": "风池",
+      "english_name": "Fengchi",
+      "meridian": "Gallbladder"
+    },
+    {
+      "code": "GB21",
+      "chinese_name": "肩井",
+      "english_name": "Jianjing",
+      "meridian": "Gallbladder"
+    },
+    {
+      "code": "SI3",
+      "chinese_name": "后溪",
+      "english_name": "Houxi",
+      "meridian": "Small Intestine"
+    },
+    {
+      "code": "SJ5",
+      "chinese_name": "外关",
+      "english_name": "Waiguan",
+      "meridian": "San Jiao"
+    },
+    {
+      "code": "BL2",
+      "chinese_name": "攒竹",
+      "english_name": "Zanzhu",
+      "meridian": "Bladder"
+    },
+    {
+      "code": "EX-HN3",
+      "chinese_name": "印堂",
+      "english_name": "Yintang",
+      "meridian": "Extra"
+    },
+    {
+      "code": "EX-HN5",
+      "chinese_name": "太阳",
+      "english_name": "Taiyang",
+      "meridian": "Extra"
+    },
+    {
+      "code": "Auricular Shenmen",
+      "chinese_name": "耳神门",
+      "english_name": "Ear Shenmen",
+      "meridian": "Auricular"
+    }
+  ]
+}
