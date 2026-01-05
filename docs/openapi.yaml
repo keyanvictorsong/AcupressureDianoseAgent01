@@ -4,7 +4,7 @@ info:
   description: 根据症状推荐穴位按摩方案，提供穴位位置图片 (静态托管版本)
   version: 1.0.0
 servers:
-  - url: https://YOUR_USERNAME.github.io/YOUR_REPO
+  - url: https://keyanvictorsong.github.io/AcupressureDianoseAgent01
 paths:
   /api/symptoms.json:
     get:

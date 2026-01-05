@@ -2,16 +2,16 @@
   "schema_version": "v1",
   "name_for_human": "穴位诊断助手",
   "name_for_model": "acupressure_diagnosis",
-  "description_for_human": "输入症状，获取穴位按摩建议和位置图片。",
-  "description_for_model": "This plugin helps users find acupressure points based on symptoms. When a user describes pain or discomfort, use this plugin to get recommended acupoints with location images. Endpoints: /api/symptoms.json for symptom list, /api/diagnose/{symptom}.json for diagnosis, /api/images/{code}.json for acupoint images.",
+  "description_for_human": "输入症状，获取穴位按摩建议和位置图片。帮助你快速找到正确的穴位进行自我保健。",
+  "description_for_model": "This plugin helps users find acupressure points based on their symptoms. When a user describes pain or discomfort (like headache, back pain, insomnia, anxiety, nausea, neck pain), use this plugin to get recommended acupoints with location images. Call /api/diagnose/{symptom}.json with symptom keywords: headache, insomnia, anxiety, neck, low_back_pain, nausea. Then call /api/images/{code}.json to get acupoint images.",
   "auth": {
     "type": "none"
   },
   "api": {
     "type": "openapi",
-    "url": "https://YOUR_USERNAME.github.io/YOUR_REPO/openapi.yaml"
+    "url": "https://keyanvictorsong.github.io/AcupressureDianoseAgent01/openapi.yaml"
   },
-  "logo_url": "https://YOUR_USERNAME.github.io/YOUR_REPO/logo.png",
-  "contact_email": "your@email.com",
-  "legal_info_url": "https://YOUR_USERNAME.github.io/YOUR_REPO/"
+  "logo_url": "https://keyanvictorsong.github.io/AcupressureDianoseAgent01/logo.svg",
+  "contact_email": "keyanvictorsong@gmail.com",
+  "legal_info_url": "https://keyanvictorsong.github.io/AcupressureDianoseAgent01/"
 }
