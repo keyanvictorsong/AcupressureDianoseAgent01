@@ -1,0 +1,3 @@
+#
+# Disable Jekyll processing so that GitHub Pages serves files and folders
+# starting with a dot (e.g., `.well-known/ai-plugin.json`).
